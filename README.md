@@ -64,7 +64,7 @@ public class GridCellTextBoxRendererExt : GridCellTextBoxRenderer
                 record1.GetType().GetProperty(mappingName).SetValue(record1, editEelementText);
             }
         }
-}
+}bj
 
 ```
 
@@ -73,8 +73,9 @@ public class GridCellTextBoxRendererExt : GridCellTextBoxRenderer
 **Documentation Link:** https://help.syncfusion.com/wpf/datagrid/column-types
 
 ![Shows the update the data values while editing in SfDataGrid](UpdateDataValues.gif)
+https://github.com/SyncfusionExamples/how-to-maintain-the-group-expanded-states-while-ungrouping-and-grouping-the-columns-at-runtime-in-wp/pull/2
 
-Take a moment to peruse the [WPF DataGrid - Editing](https://help.syncfusion.com/wpf/datagrid/editing) documentation, where you can find about editing with code examples.
+KB article - [How to update the data values while editing mode in WPF DataGrid (SfDataGrid)?](https://www.syncfusion.com/kb/12652/how-to-update-the-data-values-while-editing-mode-in-wpf-datagrid-sfdatagrid)
 
 ## Requirements to run the demo
 Visual Studio 2015 and above versions
