@@ -3,7 +3,7 @@
 ## About the sample
 This example illustrates how to update the data values while editing mode in [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid)? 
 
-[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) does not provide the direct support to update the data values while editing. You can update the values while editing by overriding [OnInitializeEditElement](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridCellTextBoxRenderer.html#Syncfusion_UI_Xaml_Grid_Cells_GridCellTextBoxRenderer_OnInitializeEditElement_Syncfusion_UI_Xaml_Grid_DataColumnBase_System_Windows_Controls_TextBox_System_Object_) method and customize the **TextBox.TextChanged** event in [GridCellTextBoxRenderer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridCellTextBoxRenderer.html) in [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid).
+[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) does not provide the direct support to update the data values while editing. You can update the values while editing by overriding [OnInitializeEditElement](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridCellTextBoxRenderer.html#Syncfusion_UI_Xaml_Grid_Cells_GridCellTextBoxRenderer_OnInitializeEditElement_Syncfusion_UI_Xaml_Grid_DataColumnBase_System_Windows_Controls_TextBox_System_Object_) method and customize the **TextBox.TextChanged** event in [GridCellTextBoxRenderer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.Cells.GridCellTextBoxRenderer.html) in DataGrid.
 
 ```C#
 
@@ -64,18 +64,15 @@ public class GridCellTextBoxRendererExt : GridCellTextBoxRenderer
                 record1.GetType().GetProperty(mappingName).SetValue(record1, editEelementText);
             }
         }
-}bj
+}
 
 ```
 
-[WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) provides support for various built-in column types. Each column has its own properties and renderer for more details please refer the below documentation link.
+DataGrid provides support for various built-in column types. Each column has its own properties and renderer for more details please refer the below documentation link.
 
-**Documentation Link:** https://help.syncfusion.com/wpf/datagrid/column-types
+**Documentation Link:** [Column Types](https://help.syncfusion.com/wpf/datagrid/column-types)
 
 ![Shows the update the data values while editing in SfDataGrid](UpdateDataValues.gif)
-https://github.com/SyncfusionExamples/how-to-maintain-the-group-expanded-states-while-ungrouping-and-grouping-the-columns-at-runtime-in-wp/pull/2
-
-KB article - [How to update the data values while editing mode in WPF DataGrid (SfDataGrid)?](https://www.syncfusion.com/kb/12652/how-to-update-the-data-values-while-editing-mode-in-wpf-datagrid-sfdatagrid)
 
 ## Requirements to run the demo
 Visual Studio 2015 and above versions
